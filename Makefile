@@ -1,5 +1,6 @@
 NAME		=	libasm.a
-SRCS		=	ft_strlen.s
+SRCS		=	ft_strlen.s \
+				ft_strcmp.s
 OBJS		=	$(SRCS:.s=.o)
 ASM			=	nasm
 FLAG		=	-f elf64
