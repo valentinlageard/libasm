@@ -6,7 +6,7 @@
 /*   By: valentin <valentin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/20 18:34:47 by valentin          #+#    #+#             */
-/*   Updated: 2021/04/20 18:34:55 by valentin         ###   ########.fr       */
+/*   Updated: 2021/04/20 19:21:20 by valentin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,10 @@
 
 int	main(void)
 {
+	char dest[20];
+
 	printf("FT_STRLEN\n");
-	printf("Empty string : %lu\n", ft_strlen(""));
+	printf("\"\" : %lu\n", ft_strlen(""));
 	printf("\"salut ca va ?\" : %lu\n", ft_strlen("salut ca va ?"));
 
 	printf("\nFT_STRCMP\n");
@@ -28,4 +30,10 @@ int	main(void)
 	printf("strcmp    : \"salu\" VS \"salut\" : %d\n", strcmp("salu", "salut"));
 	printf("ft_strcmp : \"\" VS \"\" : %d\n", ft_strcmp("", ""));
 	printf("strcmp    : \"\" VS \"\" : %d\n", strcmp("", ""));
+
+	printf("\nFT_STRCPY\n");
+	printf("ft_strcpy : \"salut ca va ?\" : \"%s\"\n", ft_strcpy(dest, "salut ca va ?"));
+	printf("strcpy    : \"salut ca va ?\" : \"%s\"\n", strcpy(dest, "salut ca va ?"));
+	printf("ft_strcpy : \"\" : \"%s\"\n", ft_strcpy(dest, ""));
+	printf("strcpy    : \"\" : \"%s\"\n", strcpy(dest, ""));
 }

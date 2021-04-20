@@ -3,6 +3,7 @@ section .text
 
 ft_strcmp:
 	mov rax, 0
+	push rbx
 	mov rbx, 0
 	mov rcx, 0
 	jmp loop
@@ -19,4 +20,5 @@ loop:
 
 exit:
 	sub rax, rbx
+	pop rbx
 	ret

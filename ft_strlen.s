@@ -3,13 +3,13 @@
 
 ft_strlen:
 	mov rax, 0
-	jmp count
+	jmp loop
 
-count:
+loop:
 	cmp byte [rdi + rax], 0
 	je exit
 	inc rax
-	jmp count
+	jmp loop
 
 exit:
 	ret

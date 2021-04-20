@@ -4,7 +4,7 @@ An assembly project for 42.
 
 Function reimplemented in assembly :
 - [x] strlen (as ft_strlen)
-- [ ] strcpy (as ft_strcpy)
+- [x] strcpy (as ft_strcpy)
 - [x] strcmp (as ft_strcmp)
 - [ ] write (as ft_write)
 - [ ] read (as ft_read)
