@@ -1,11 +1,11 @@
-global ft_write
+global ft_read
 extern __errno_location
 section .text
 
-ft_write:
+ft_read:
 	push rbp ; prologue
 	mov rbp, rsp ; prologue
-	mov rax, 1 ; select the write syscall
+	mov rax, 0 ; select the write syscall
 	; (rdi, rsi and rdx already contains the arguments)
 	syscall
 	cmp rax, 0 ; if there was an error

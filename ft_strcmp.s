@@ -2,6 +2,8 @@ global ft_strcmp
 section .text
 
 ft_strcmp:
+	push rbp ; prologue
+	mov rbp, rsp ; prologue
 	xor rax, rax ; init rax as char1
 	push rbx ; save rbx (must be preserved)
 	xor rbx, rbx ; init rbx as char2
@@ -21,4 +23,5 @@ loop:
 exit:
 	sub rax, rbx ; in place substract rbx from rax
 	pop rbx ; restore rbx
+	pop rbp ; epilogue
 	ret ; return the substraction stored in rax

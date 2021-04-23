@@ -2,8 +2,10 @@ global ft_strcpy
 section .text
 
 ft_strcpy:
+	push rbp ; prologue
+	mov rbp, rsp ; prologue
 	xor rax, rax ; init rax as char_source
-	xor rcx, rax ; init rcx as counter
+	xor rcx, rcx ; init rcx as counter
 	jmp loop ; start loop
 
 loop:
@@ -16,4 +18,5 @@ loop:
 
 exit:
 	mov rax, rdi ; store the dest pointer as return value
+	pop rbp ; epilogue
 	ret ; and return

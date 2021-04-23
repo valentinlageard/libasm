@@ -2,7 +2,9 @@ NAME		=	libasm.a
 SRCS		=	ft_strlen.s \
 				ft_strcmp.s \
 				ft_strcpy.s \
-				ft_write.s
+				ft_write.s \
+				ft_read.s \
+				ft_strdup.s
 OBJS		=	$(SRCS:.s=.o)
 ASM			=	nasm
 FLAG		=	-f elf64
@@ -24,6 +26,7 @@ test:	all
 fclean:	clean
 		rm -f $(NAME)
 		rm -f test
+		rm -f *.txt
 
 re:		fclean all
 

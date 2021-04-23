@@ -6,7 +6,7 @@ Function reimplemented in assembly :
 - [x] strlen (as ft_strlen)
 - [x] strcpy (as ft_strcpy)
 - [x] strcmp (as ft_strcmp)
-- [ ] write (as ft_write)
+- [x] write (as ft_write)
 - [ ] read (as ft_read)
 - [ ] strdup (as ft_strdup)
 
