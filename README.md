@@ -17,4 +17,4 @@ Features :
 Usage :
 - `make` : compile the `libasm.a` library.
 - `make test` : compile a `test` program.
-- `./test` : executes the tests.
+- `./test` : execute the tests.
