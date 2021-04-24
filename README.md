@@ -2,7 +2,7 @@
 
 An assembly project for 42.
 
-Function reimplemented in assembly :
+Functions reimplemented in assembly :
 - strlen (as ft_strlen)
 - strcpy (as ft_strcpy)
 - strcmp (as ft_strcmp)
